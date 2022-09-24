@@ -1,9 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-1: #F09B37;
+  --accent-2: #EF7264;
+  --accent-3: #C76087;
+  --accent-4: #895D92;
+
+  --lotion-white: #FBFBFB;
+  --bright-gray: #EAEAEA;
+  --chinese-black: #161616;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Big Shoulders Display', 'cursive', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
 }
 
 a {
