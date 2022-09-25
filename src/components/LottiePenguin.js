@@ -11,7 +11,7 @@ const lottieOptions = {
   }
 };
 
-export default function LottieLoader() {
+export default function LottiePenguin() {
   return (
     <motion.div
       initial={{ y: 5, opacity: 0 }}

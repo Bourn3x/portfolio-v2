@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Entrance from '../src/components/Entrance';
-import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import LottieLoader from '../src/components/LottiePenguin';
+import Head from 'next/head';
+import { motion, AnimatePresence } from 'framer-motion';
+import LottiePenguin from '../src/components/LottiePenguin';
+import Entrance from '../src/components/Entrance';
 import Footer from '../src/components/Footer';
 import { INTRO_COVER_EXIT_DELAY } from '/src/util/timings';
 
@@ -46,14 +46,16 @@ export default function Home() {
                 setTimeout(() => setFinishIntro(true), INTRO_COVER_EXIT_DELAY * 1000 )}
               }
             >
-              <LottieLoader />
+              <LottiePenguin />
             </motion.div>
           }
         </AnimatePresence>
         
         {
           finishIntro &&
-          <Entrance />
+          <>
+            <Entrance />
+          </>
         }
       </main>
 

@@ -54,11 +54,14 @@ export default function Navbar() {
       variants={motionNavbarcontainer}
       initial="hidden"
       animate="show"
-      className="flex pt-12">
+      className="flex gap-x-8 pt-12">
       {links.map(link => 
         <motion.div key={link.label} variants={motionNavbarItem}>
-          <div className="mr-8 cursor-pointer link-container">
-            <p className="text-2xl text-bright-gray font-bold">{link.label}</p>
+          <div className="cursor-pointer link-container">
+            <p className="text-xl xxs:text-2xl text-bright-gray font-bold">
+              {link.label.split(" ")[0]}
+              <span className="hidden sm:inline-block ml-1.5">{link.label.split(" ")[1]}</span>
+            </p>
             <div className={`border-b-2 ${link.color} w-3/4 duration-500 link-underline`} />   
           </div>
         </motion.div>

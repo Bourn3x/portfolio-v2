@@ -12,14 +12,18 @@ const lottieOptions = {
   }
 };
 
-export default function LottieLoader() {
+export default function LottieToaster() {
   return (
     <motion.div
       initial={{ y: 5, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: PROFILE_ENTRANCE_DEPLAY + 1, duration: 1 }}
     >
-      <Lottie options={lottieOptions} height={300} isClickToPauseDisabled={true}/>
+      <Lottie 
+        style={{ "maxWidth": "300px" }}
+        options={lottieOptions}
+        isClickToPauseDisabled={true}
+      />
     </motion.div>
   );
 }
