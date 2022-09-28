@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { PROFILE_ENTRANCE_DEPLAY } from "/src/util/timings";
+import { PROFILE_ENTRANCE_DEPLAY } from "/src/constants/timings";
 
 const motionProfilecontainer = {
   show: {

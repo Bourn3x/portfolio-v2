@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Lottie from "react-lottie";
 import toaster from "../lotties/toaster.json";
-import { PROFILE_ENTRANCE_DEPLAY } from "/src/util/timings";
+import { PROFILE_ENTRANCE_DEPLAY } from "/src/constants/timings";
 
 const lottieOptions = {
   loop: true,

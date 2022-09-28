@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import LottiePenguin from '../src/components/LottiePenguin';
 import Entrance from '../src/components/Entrance';
 import Footer from '../src/components/Footer';
-import { INTRO_COVER_EXIT_DELAY } from '/src/util/timings';
+import { INTRO_COVER_EXIT_DELAY } from '/src/constants/timings';
 
 
 const motionIntroCoverContainer = {
