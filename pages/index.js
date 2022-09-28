@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
 import LottiePenguin from '../src/components/LottiePenguin';
-import Entrance from '../src/components/Entrance';
+import EntranceSection from '../src/components/EntranceSection';
 import Footer from '../src/components/Footer';
 import { INTRO_COVER_EXIT_DELAY } from '/src/constants/timings';
 
@@ -54,7 +54,7 @@ export default function Home() {
         {
           finishIntro &&
           <>
-            <Entrance />
+            <EntranceSection />
           </>
         }
       </main>
