@@ -10,7 +10,7 @@ export default function SkillsHolder({ category, skills, motionConfig }) {
         </h3>
       </div>
 
-      <div className="grid grid-cols-6 w-full max-w-5xl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-12 w-full max-w-5xl">
         {skills.map(skill =>
           <motion.div
             whileHover={{
@@ -21,8 +21,8 @@ export default function SkillsHolder({ category, skills, motionConfig }) {
             key={skill.name} 
             className="flex flex-col items-center text-chinese-black"
           >
-            <i className={`${skill.iconClassName} text-5xl`} />
-            <p className="text-2xl font-medium mt-2">{skill.name}</p>
+            <i className={`${skill.iconClassName} text-4xl xxs:text-5xl`} />
+            <p className="font-medium mt-2 text-2xl">{skill.name}</p>
           </motion.div>
         )}
       </div>
