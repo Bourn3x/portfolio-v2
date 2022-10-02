@@ -7,7 +7,7 @@ export default function Entrance() {
     <section>
       <div className="flex w-full">
 
-        <div className="bg-bright-gray w-1/4 hidden lg:flex items-center justify-center">
+        <div className="bg-toasty-orange w-1/4 hidden lg:flex items-center justify-center">
           <LottieToaster />
         </div>
 

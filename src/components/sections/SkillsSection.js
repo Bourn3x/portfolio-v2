@@ -38,7 +38,7 @@ export default function SkillsSection() {
         <motion.h1 variants={motionSkillsItem} className="text-6xl xxs:text-7xl text-accent-2 font-bold">
           Skills
         </motion.h1>
-        <motion.h2 variants={motionSkillsItem} className="text-2xl xxs:text-3xl font-semibold mt-2 mb-32">
+        <motion.h2 variants={motionSkillsItem} className="text-2xl xxs:text-3xl font-semibold mt-2 mb-16 lg:mb-32">
           Some stuff that I'm
           <span className="text-accent-2"> pretty good </span>
           at.

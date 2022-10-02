@@ -35,7 +35,7 @@ export default function WorkSection() {
         viewport={{ once: true }}
         className="flex flex-col items-center px-4"
       >
-        <motion.h1 variants={motionWorkItem} className="text-6xl xxs:text-7xl text-accent-3 font-bold pt-40">
+        <motion.h1 variants={motionWorkItem} className="text-center text-6xl xxs:text-7xl text-accent-3 font-bold pt-40">
           Work Experience
         </motion.h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-20 mt-16 max-w-7xl">
