@@ -5,7 +5,7 @@ import { bitcarraImages, esriImages, suriaLabsImages, jetspreeImages } from "con
 const motionWorkContainer = {
   show: {
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.4,
     }
   }
 }
@@ -27,14 +27,14 @@ const motionWorkItem = {
 
 export default function WorkSection() {
   return (
-    <motion.section
-      variants={motionWorkContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="mt-48 md:mt-72 bg-raisin-black"
-    >
-      <div className="flex flex-col items-center px-4">
+    <section className="mt-48 md:mt-72 bg-raisin-black">
+      <motion.div
+        variants={motionWorkContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="flex flex-col items-center px-4"
+      >
         <motion.h1 variants={motionWorkItem} className="text-6xl xxs:text-7xl text-accent-3 font-bold pt-40">
           Work Experience
         </motion.h1>
@@ -80,7 +80,7 @@ export default function WorkSection() {
         </div>
 
         <div className="h-72" />
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   )
 }

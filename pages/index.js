@@ -2,10 +2,10 @@ import { useState } from 'react';
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
 import LottiePenguin from 'components/LottiePenguin';
-import EntranceSection from 'components/EntranceSection';
-import SkillsSection from 'components/SkillsSection';
-import WorkSection from 'components/WorkSection';
-import Footer from 'components/Footer';
+import EntranceSection from 'components/sections/EntranceSection';
+import SkillsSection from 'components/sections/SkillsSection';
+import WorkSection from 'components/sections/WorkSection';
+import Footer from 'components/sections/Footer';
 import { INTRO_COVER_EXIT_DELAY } from 'constants/timings';
 
 const motionIntroCoverContainer = {
