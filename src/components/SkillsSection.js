@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import SkillsHolder from "./SkillsHolder";
-import { SKILLS } from "../constants/skills";
+import SkillsHolder from "components/SkillsHolder";
+import { SKILLS } from "constants/skills";
 
 const motionSkillsContainer = {
   show: {

@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
-import LottiePenguin from '../src/components/LottiePenguin';
-import EntranceSection from '../src/components/EntranceSection';
-import SkillsSection from '../src/components/SkillsSection';
-import Footer from '../src/components/Footer';
-import { INTRO_COVER_EXIT_DELAY } from '/src/constants/timings';
-import WorkSection from '../src/components/WorkSection';
-
+import LottiePenguin from 'components/LottiePenguin';
+import EntranceSection from 'components/EntranceSection';
+import SkillsSection from 'components/SkillsSection';
+import WorkSection from 'components/WorkSection';
+import Footer from 'components/Footer';
+import { INTRO_COVER_EXIT_DELAY } from 'constants/timings';
 
 const motionIntroCoverContainer = {
   show: {

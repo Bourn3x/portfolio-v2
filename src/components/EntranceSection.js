@@ -1,6 +1,6 @@
-import LottieToaster from "./LottieToaster";
-import Navbar from "./Navbar";
-import Profile from "./Profile";
+import LottieToaster from "components/LottieToaster";
+import Navbar from "components/Navbar";
+import Profile from "components/Profile";
 
 export default function Entrance() {
   return (

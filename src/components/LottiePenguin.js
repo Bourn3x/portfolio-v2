@@ -1,6 +1,6 @@
-import Lottie from "react-lottie";
-import penguin from "../lotties/penguin.json";
 import { motion } from 'framer-motion';
+import Lottie from "react-lottie";
+import penguin from "lotties/penguin.json";
 
 const lottieOptions = {
   loop: false,

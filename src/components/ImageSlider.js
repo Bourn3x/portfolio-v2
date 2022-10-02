@@ -1,6 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react"
-import ImageArrow from "./ImageArrow";
+import { AnimatePresence, motion } from "framer-motion";
+import ImageArrow from "components/ImageArrow";
 
 const imageMotionVariants = {
   enter: (direction) => {

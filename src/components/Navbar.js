@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { INTRO_COVER_EXIT_DELAY } from "/src/constants/timings";
+import { INTRO_COVER_EXIT_DELAY } from "constants/timings";
 
 const motionNavbarcontainer = {
   show: {

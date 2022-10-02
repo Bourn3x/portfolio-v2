@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import ImageSlider from "./ImageSlider";
-import SkillPill from "./SkillPill";
+import ImageSlider from "components/ImageSlider";
+import SkillPill from "components/SkillPill";
 
 export default function WorkExperienceHolder({
   images,

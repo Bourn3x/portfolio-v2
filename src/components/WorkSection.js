@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import WorkExperienceHolder from "./WorkExperienceHolder";
-import { bitcarraImages, esriImages, suriaLabsImages, jetspreeImages } from "/src/constants/images";
+import WorkExperienceHolder from "components/WorkExperienceHolder";
+import { bitcarraImages, esriImages, suriaLabsImages, jetspreeImages } from "constants/images";
 
 const motionWorkContainer = {
   show: {
