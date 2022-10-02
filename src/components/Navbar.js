@@ -58,7 +58,7 @@ export default function Navbar() {
       {links.map(link => 
         <motion.div key={link.label} variants={motionNavbarItem}>
           <div className="cursor-pointer link-container">
-            <p className="text-xl xxs:text-2xl text-bright-gray font-bold">
+            <p className="text-xl xxs:text-2xl text-lotion-white font-bold">
               {link.label.split(" ")[0]}
               <span className="hidden sm:inline-block ml-1.5">{link.label.split(" ")[1]}</span>
             </p>

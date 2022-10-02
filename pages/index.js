@@ -61,11 +61,10 @@ export default function Home() {
             <WorkSection />
             <PersonalSection />
             <div className="h-48"/>
+            <Footer />
           </>
         }
       </main>
-
-      {/* <Footer /> */}
     </>
   )
 }
