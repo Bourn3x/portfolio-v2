@@ -14,7 +14,11 @@ module.exports = {
         'lotion-white': 'var(--lotion-white)',
         'bright-gray': 'var(--bright-gray)',
         'chinese-black': 'var(--chinese-black)',
+        'raisin-black': 'var(--raisin-black)',
       },
+    },
+    fontFamily: {
+      'lato': 'Lato, sans-serif',
     },
     screens: {
       'xxs': '388px',

@@ -6,6 +6,7 @@ import EntranceSection from '../src/components/EntranceSection';
 import SkillsSection from '../src/components/SkillsSection';
 import Footer from '../src/components/Footer';
 import { INTRO_COVER_EXIT_DELAY } from '/src/constants/timings';
+import WorkSection from '../src/components/WorkSection';
 
 
 const motionIntroCoverContainer = {
@@ -57,6 +58,7 @@ export default function Home() {
           <>
             <EntranceSection />
             <SkillsSection />
+            <WorkSection />
             <div className="h-48"/>
           </>
         }
