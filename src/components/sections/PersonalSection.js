@@ -40,7 +40,7 @@ export default function PersonalSection() {
         <motion.h2 variants={motionPersonalItem} className="text-2xl xxs:text-3xl font-semibold mt-2 mb-16 xs:mb-32 text-center">
           A few
           <span className="text-accent-4"> side projects </span>
-          I've worked on during my free time.
+          I&apos;ve worked on during my free time.
         </motion.h2>
 
         <div className="flex flex-col gap-y-12">

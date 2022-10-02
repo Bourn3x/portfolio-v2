@@ -87,7 +87,8 @@ export default function ImageSlider({ images }) {
 
       <div className="mt-4 absolute bottom-3 flex gap-x-2">
         {React.Children.toArray(new Array(images.length).fill(0).map((_, i) => 
-          <div 
+          <div
+            key={page}
             className={`rounded-full border-2 border-white w-3 h-3 duration-500 ${page == i 
               ? 'bg-white' 
               : ''}`

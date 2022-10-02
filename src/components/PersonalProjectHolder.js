@@ -14,7 +14,7 @@ export default function PersonalProjectHolder({
   return (
     <motion.div variants={motionConfig} className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-6 max-w-6xl">
       <div className="max-w-2xl image-container">
-        <img src={imageUrl} className="rounded-xl"/>
+        <img src={imageUrl} alt="" className="rounded-xl"/>
       </div>
 
       <div>

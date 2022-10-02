@@ -39,7 +39,7 @@ export default function SkillsSection() {
           Skills
         </motion.h1>
         <motion.h2 variants={motionSkillsItem} className="text-2xl xxs:text-3xl font-semibold mt-2 mb-16 lg:mb-32">
-          Some stuff that I'm
+          Some stuff that I&apos;m
           <span className="text-accent-2"> pretty good </span>
           at.
         </motion.h2>
