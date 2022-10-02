@@ -5,6 +5,7 @@ import LottiePenguin from 'components/LottiePenguin';
 import EntranceSection from 'components/sections/EntranceSection';
 import SkillsSection from 'components/sections/SkillsSection';
 import WorkSection from 'components/sections/WorkSection';
+import PersonalSection from 'components/sections/PersonalSection';
 import Footer from 'components/sections/Footer';
 import { INTRO_COVER_EXIT_DELAY } from 'constants/timings';
 
@@ -58,6 +59,7 @@ export default function Home() {
             <EntranceSection />
             <SkillsSection />
             <WorkSection />
+            <PersonalSection />
             <div className="h-48"/>
           </>
         }
