@@ -9,6 +9,12 @@ import PersonalSection from 'components/sections/PersonalSection';
 import Footer from 'components/sections/Footer';
 import { INTRO_COVER_EXIT_DELAY } from 'constants/timings';
 
+export async function getStaticProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
 const motionIntroCoverContainer = {
   show: {
     x: 0,
