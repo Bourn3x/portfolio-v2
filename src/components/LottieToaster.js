@@ -23,6 +23,7 @@ export default function LottieToaster() {
         style={{ "maxWidth": "300px" }}
         options={lottieOptions}
         isClickToPauseDisabled={true}
+        ariaRole="none"
       />
     </motion.div>
   );
