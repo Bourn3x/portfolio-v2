@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion";
 import ImageArrow from "components/ImageArrow";
+import Image from "next/image";
 
 const imageMotionVariants = {
   enter: (direction) => {
@@ -31,6 +32,14 @@ const swipePower = (offset, velocity) => {
 
 export default function ImageSlider({ images }) {
   const [[page, direction], setPage] = useState([0, 0]);
+  const [imagesMapped, setImagesMapped] = useState([]);
+
+  useEffect(() => {
+    // Preload images
+    setImagesMapped(images.map(imageFilename => 
+      <Image src={imageFilename} width={410} height={230} priority/>
+    ));
+  }, [])
 
   const paginate = (newDirection) => {
     let newPage = page + newDirection;
@@ -46,9 +55,8 @@ export default function ImageSlider({ images }) {
   return (
     <div className="relative rounded-lg flex flex-col items-center overflow-hidden container">
       <AnimatePresence initial={false} custom={direction}>
-        <motion.img 
+        <motion.div 
           key={page}
-          src={images[page]}
           custom={direction}
           variants={imageMotionVariants}
           initial="enter"
@@ -71,7 +79,9 @@ export default function ImageSlider({ images }) {
             }
           }}
           className="rounded-xl absolute w-11/12 top-3 image-container"
-        />
+        >
+          {imagesMapped[page]}
+        </motion.div>
       </AnimatePresence>
 
       <ImageArrow 
