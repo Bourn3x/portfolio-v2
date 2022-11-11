@@ -48,13 +48,13 @@ const links = [
   },
 ];
 
-export default function Navbar() {
-  const handleClickLink = (sectionId) => {
-    const section = document.querySelector(sectionId);
-    if (!section) return;
-    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
-  };
+const handleClickLink = (sectionId) => () => {
+  const section = document.querySelector(sectionId);
+  if (!section) return;
+  section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+};
 
+export default function Navbar() {
   return (
     <motion.div 
       variants={motionNavbarcontainer}
@@ -62,7 +62,7 @@ export default function Navbar() {
       animate="show"
       className="flex gap-x-8 pt-12">
       {links.map(link => 
-        <motion.div onClick={() => handleClickLink(link.section)} key={link.label} variants={motionNavbarItem}>
+        <motion.div onClick={handleClickLink(link.section)} key={link.label} variants={motionNavbarItem}>
           <div className="cursor-pointer link-container">
             <p className="text-xl xxs:text-2xl text-lotion-white font-bold">
               {link.label.split(" ")[0]}
