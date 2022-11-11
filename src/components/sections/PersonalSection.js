@@ -45,7 +45,7 @@ export default function PersonalSection() {
 
         <div className="flex flex-col gap-y-12">
           <PersonalProjectHolder
-            imageUrl="personals/needsomethingtodo.png"
+            imageUrl="/personals/needsomethingtodo.png"
             title="1. Need Something To Do"
             description="An app that generates random activities for
             you to do. Built using React.js, and Vivus to animate SVGs."
@@ -55,7 +55,7 @@ export default function PersonalSection() {
             motionConfig={motionPersonalItem}
           />
           <PersonalProjectHolder
-            imageUrl="personals/portfolio-v2.png"
+            imageUrl="/personals/portfolio-v2.png"
             title="2. Portfolio V2"
             description="Second iteration of my portfolio. Here I
             showcase my skills, work experience, and personal projects
@@ -66,7 +66,7 @@ export default function PersonalSection() {
             motionConfig={motionPersonalItem}
           />
           <PersonalProjectHolder
-            imageUrl="personals/styl.png"
+            imageUrl="/personals/styl.png"
             title="3. Styl"
             description="An official landing page for an auditing and
             accounting firm."
@@ -75,7 +75,8 @@ export default function PersonalSection() {
             motionConfig={motionPersonalItem}
           />
           <PersonalProjectHolder
-            imageUrl="personals/pew.gif"
+            imageUrl="/personals/pew.gif"
+            imageHeight={450}
             title="4. Space Invaders"
             description="A retro classic video game inspired from Space Invaders.
             Built from scratch using C++, and SFML to render assets."

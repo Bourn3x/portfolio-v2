@@ -1,9 +1,11 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import SkillPill from "./SkillPill";
 import ThemeButton from "./ThemeButton";
 
 export default function PersonalProjectHolder({
   imageUrl,
+  imageHeight = 305,
   title,
   description,
   skills,
@@ -14,7 +16,8 @@ export default function PersonalProjectHolder({
   return (
     <motion.div variants={motionConfig} className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-6 max-w-6xl">
       <div className="max-w-2xl image-container">
-        <img src={imageUrl} alt="" className="rounded-xl"/>
+        <Image src={imageUrl} width={535} height={imageHeight} className="rounded-xl" quality={100}/>
+        {/* <img src={imageUrl} alt="" className="rounded-xl"/> */}
       </div>
 
       <div>
