@@ -4,7 +4,7 @@ import Profile from "components/Profile";
 
 export default function Entrance() {
   return (
-    <section>
+    <section id="intro">
       <div className="flex w-full">
 
         <div className="bg-toasty-orange w-1/4 hidden lg:flex items-center justify-center">

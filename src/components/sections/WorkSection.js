@@ -27,7 +27,7 @@ const motionWorkItem = {
 
 export default function WorkSection() {
   return (
-    <section className="mt-48 md:mt-72 bg-raisin-black">
+    <section id="work" className="mt-48 md:mt-72 bg-raisin-black">
       <motion.div
         variants={motionWorkContainer}
         initial="hidden"

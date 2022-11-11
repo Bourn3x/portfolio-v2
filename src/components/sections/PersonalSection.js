@@ -26,7 +26,7 @@ const motionPersonalItem = {
 
 export default function PersonalSection() {
   return (
-    <section>
+    <section id="personal">
       <motion.div
         variants={motionPersonalContainer}
         initial="hidden"

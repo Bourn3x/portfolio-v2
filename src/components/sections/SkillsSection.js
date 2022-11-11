@@ -27,7 +27,7 @@ const motionSkillsItem = {
 
 export default function SkillsSection() {
   return (
-    <section>
+    <section id="skills">
       <motion.div
         variants={motionSkillsContainer}
         initial="hidden"
