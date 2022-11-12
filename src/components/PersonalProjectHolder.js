@@ -16,7 +16,7 @@ export default function PersonalProjectHolder({
   return (
     <motion.div variants={motionConfig} className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-6 max-w-6xl">
       <div className="max-w-2xl image-container">
-        <Image src={imageUrl} width={535} height={imageHeight} className="rounded-xl" quality={100} priority/>
+        <Image src={imageUrl} width={535} height={imageHeight} className="rounded-xl" quality={100} priority alt=""/>
         {/* <img src={imageUrl} alt="" className="rounded-xl"/> */}
       </div>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion";
 import ImageArrow from "components/ImageArrow";
 import Image from "next/image";
@@ -32,14 +32,10 @@ const swipePower = (offset, velocity) => {
 
 export default function ImageSlider({ images }) {
   const [[page, direction], setPage] = useState([0, 0]);
-  const [imagesMapped, setImagesMapped] = useState([]);
 
-  useEffect(() => {
-    // Preload images
-    setImagesMapped(images.map(imageFilename => 
-      <Image src={imageFilename} width={410} height={230} priority/>
-    ));
-  }, [])
+  const imagesMapped = images.map(imageFilename => 
+    <Image key={imageFilename} src={imageFilename} width={410} height={230} priority alt=""/>
+  );
 
   const paginate = (newDirection) => {
     let newPage = page + newDirection;
