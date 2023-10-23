@@ -81,7 +81,7 @@ export default function PersonalSection() {
             description="A retro classic video game inspired from Space Invaders.
             Built from scratch using C++, and SFML to render assets."
             skills={["C/C++", "SFML"]}
-            gitUrl="https://github.com/Bourn3x/Space-Invaders-v2"
+            gitUrl="https://github.com/Bourn3x/Space-Invaders-v2/tree/main/Space%20Invaders%20v2"
             motionConfig={motionPersonalItem}
           />
         </div>
