@@ -3,7 +3,7 @@ import { colors } from "constants/colors";
 export default function Footer() {
   return (
     <>
-      <div className="border-b border-gray-300 w-full"/>
+      <div className="border-b border-gray-300 w-full" />
 
       <footer className="flex flex-col sm:flex-row items-start justify-center gap-x-12 gap-y-8 px-4 py-4 bg-amber-50">
 
@@ -14,7 +14,7 @@ export default function Footer() {
               <div key={color.accent} className="flex flex-col items-center">
                 <div className={`w-8 h-8 rounded-full ${color.accent}`} />
                 <div>{color.hexcode}</div>
-              </div> 
+              </div>
             )}
           </div>
         </div>
@@ -22,13 +22,13 @@ export default function Footer() {
         <div className="text-left">
           <div className="font-medium text-2xl font-bold mb-2">Contact</div>
           <div className="text-xl">
-            LinkedIn - 
+            LinkedIn -
             <a
-              href="https://www.linkedin.com/in/julian-chong-lee-wen/" 
+              href="https://www.linkedin.com/in/julianchong-/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 ">
-              https://www.linkedin.com/in/julian-chong-lee-wen/
+              https://www.linkedin.com/in/julianchong-/
             </a>
           </div>
           <div className="mt-2 text-xl">

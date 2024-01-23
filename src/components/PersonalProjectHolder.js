@@ -12,11 +12,11 @@ export default function PersonalProjectHolder({
   siteUrl,
   gitUrl,
   motionConfig,
-}) {  
+}) {
   return (
     <motion.div variants={motionConfig} className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-6 max-w-6xl">
       <div className="max-w-2xl image-container">
-        <Image src={imageUrl} width={535} height={imageHeight} className="rounded-xl" quality={100} priority alt=""/>
+        <Image src={imageUrl} width={535} height={imageHeight} className="rounded-xl" quality={100} priority alt="" />
         {/* <img src={imageUrl} alt="" className="rounded-xl"/> */}
       </div>
 
@@ -25,7 +25,7 @@ export default function PersonalProjectHolder({
           {title}
         </h3>
         <div className="flex flex-wrap gap-x-2 gap-y-2 mt-4">
-          {skills.map(skill => 
+          {skills.map(skill =>
             <SkillPill
               key={skill}
               label={skill}
@@ -36,24 +36,24 @@ export default function PersonalProjectHolder({
         <p className="text-justify text-md font-bold text-chinese-black font-lato my-4 max-w-2xl lg:max-w-md">
           {description}
         </p>
-        
+
         <div className="flex flex-wrap gap-x-4 gap-y-4">
           {siteUrl &&
-            <ThemeButton 
+            <ThemeButton
               label="Go To Site"
               className="border-accent-4 text-accent-4 hover:bg-accent-4 hover:text-lotion-white"
               redirectUrl={siteUrl}
             />
           }
           {gitUrl &&
-            <ThemeButton 
+            <ThemeButton
               label="View Git Repo"
               className="border-accent-3 text-accent-3 hover:bg-accent-3 hover:text-lotion-white"
               redirectUrl={gitUrl}
             />
           }
         </div>
-        
+
       </div>
     </motion.div>
   )
