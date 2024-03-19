@@ -41,35 +41,37 @@ export default function Home() {
       </Head>
       
       <main>
-        <AnimatePresence>
-          {!finishIntro &&
-            <motion.div
-              className="h-screen w-screen flex items-center justify-center bg-gray-500 absolute z-50"
-              key="intro-cover"
-              variants={motionIntroCoverContainer}
-              initial="show"
-              animate="show"
-              exit="exit"
-              onAnimationComplete={() => {
-                setTimeout(() => setFinishIntro(true), INTRO_COVER_EXIT_DELAY * 1000 )}
-              }
-            >
-              <LottiePenguin />
-            </motion.div>
+        <div className="min-h-[100vh] min-w-[100vw] overflow-x-hidden relative">
+          <AnimatePresence>
+            {!finishIntro &&
+              <motion.div
+                className="h-screen w-screen flex items-center justify-center bg-gray-500 absolute z-50 overflow-hidden"
+                key="intro-cover"
+                variants={motionIntroCoverContainer}
+                initial="show"
+                animate="show"
+                exit="exit"
+                onAnimationComplete={() => {
+                  setTimeout(() => setFinishIntro(true), INTRO_COVER_EXIT_DELAY * 1000 )}
+                }
+              >
+                <LottiePenguin />
+              </motion.div>
+            }
+          </AnimatePresence>
+
+          {
+            finishIntro &&
+            <>
+              <EntranceSection />
+              <SkillsSection />
+              <WorkSection />
+              <PersonalSection />
+              <div className="h-48"/>
+              <Footer />
+            </>
           }
-        </AnimatePresence>
-        
-        {
-          finishIntro &&
-          <>
-            <EntranceSection />
-            <SkillsSection />
-            <WorkSection />
-            <PersonalSection />
-            <div className="h-48"/>
-            <Footer />
-          </>
-        }
+        </div>
       </main>
     </>
   )
