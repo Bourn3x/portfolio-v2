@@ -7,15 +7,23 @@ const FRONTEND_SKILLS = {
     },
     {
       name: "Next.js",
-      iconClassName: "devicon-nextjs-line",
+      iconClassName: "devicon-nextjs-plain",
     },
     {
-      name: "Svelte",
+      name: "SvelteKit",
       iconClassName: "devicon-svelte-plain",
     },
     {
       name: "TailwindCSS",
       iconClassName: "devicon-tailwindcss-plain",
+    },
+    {
+      name: "Bootstrap",
+      iconClassName: "devicon-bootstrap-plain",
+    },
+    {
+      name: "Sass",
+      iconClassName: "devicon-sass-original",
     },
     {
       name: "Flutter",
@@ -28,12 +36,20 @@ const BACKEND_SKILLS = {
   category: "Backend",
   skills: [
     {
+      name: "Node.js",
+      iconClassName: "devicon-nodejs-plain",
+    },
+    {
+      name: "Express.js",
+      iconClassName: "devicon-express-original",
+    },
+    {
       name: "Nest.js",
       iconClassName: "devicon-nestjs-plain",
     },
     {
-      name: "Node.js",
-      iconClassName: "devicon-nodejs-plain",
+      name: "Django",
+      iconClassName: "devicon-django-plain",
     },
     {
       name: "FastAPI",
@@ -43,6 +59,12 @@ const BACKEND_SKILLS = {
       name: "Flask",
       iconClassName: "devicon-flask-original",
     },
+  ],
+};
+
+const DATABASE_SKILLS = {
+  category: "Database",
+  skills: [
     {
       name: "PostgreSQL",
       iconClassName: "devicon-postgresql-plain",
@@ -51,8 +73,16 @@ const BACKEND_SKILLS = {
       name: "MySQL",
       iconClassName: "devicon-mysql-plain",
     },
-  ],
-};
+    {
+      name: "Prisma",
+      iconClassName: "devicon-prisma-original",
+    },
+    {
+      name: "Knex.js / Objection.js",
+      iconClassName: "devicon-knexjs-plain-wordmark",
+    }
+  ]
+}
 
 const OTHER_SKILLS = {
   category: "Others",
@@ -62,14 +92,18 @@ const OTHER_SKILLS = {
       iconClassName: "devicon-typescript-plain",
     },
     {
-      name: "Docker",
-      iconClassName: "devicon-docker-plain",
+      name: "tRPC",
+      iconClassName: "devicon-trpc-plain",
     },
     {
-      name: "Kubernetes",
-      iconClassName: "devicon-kubernetes-plain",
+      name: "AWS",
+      iconClassName: "devicon-amazonwebservices-plain-wordmark",
+    },
+    {
+      name: "Docker",
+      iconClassName: "devicon-docker-plain",
     },
   ]
 }
 
-export const SKILLS = [FRONTEND_SKILLS, BACKEND_SKILLS, OTHER_SKILLS];
+export const SKILLS = [FRONTEND_SKILLS, BACKEND_SKILLS, DATABASE_SKILLS, OTHER_SKILLS];
