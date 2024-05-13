@@ -39,7 +39,7 @@ export default function ImageSwiper({ images }) {
             }}
           >
             {images.map((img, i) => (
-              <swiper-slide lazy="true">
+              <swiper-slide key={i} lazy="true">
                 <img className="rounded-lg" src={img} alt={`img-${i}`} />
               </swiper-slide>
             ))}

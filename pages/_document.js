@@ -19,7 +19,6 @@ export default function Document() {
           type="text/css"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" />
       </Head>
       <body>
         <Main />
